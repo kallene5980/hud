@@ -1,6 +1,8 @@
+--BY BNJ-- 𝑯𝒐𝒎𝒎𝒆-𝒆𝒇𝒇𝒊𝒄𝒂𝒔𝒆
+
 ESX                  = nil
 Citizen.CreateThread(function()
-	--OpenClotheShop()
+
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 		Citizen.Wait(0)
@@ -11,7 +13,7 @@ RegisterNetEvent('es:activateMoney')
 AddEventHandler('es:activateMoney', function(moneyx)
 	if rdy then
 		ESX.PlayerData.money = moneyx
-	--	cash = moneyx
+
 	end
 end)
 RegisterNetEvent('esx:playerLoaded')
